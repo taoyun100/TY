@@ -22,6 +22,12 @@ export default function Home() {
         </video>
         <div className="relative z-20 h-full flex items-center justify-center">
           <div className="text-center space-y-4">
+            <div className="mb-8">
+              <h2 className="text-3xl md:text-4xl font-light text-gray-200 mb-2">
+                Tao & Yun
+              </h2>
+              <div className="w-24 h-px bg-white/50 mx-auto"></div>
+            </div>
             <h1 className="text-6xl md:text-8xl font-bold tracking-tight">
               Our Story
             </h1>
