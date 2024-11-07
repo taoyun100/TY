@@ -54,7 +54,7 @@ export default function Home() {
             <div>
               <h2 className="text-3xl font-bold mb-4">Our Journey</h2>
               <p className="text-gray-400 leading-relaxed text-lg">
-                在这里书写你们的爱情故事...
+                在这里书写你们的爱情故事.......
                 每一天都是新的开始，每一刻都值得珍藏。
               </p>
             </div>
