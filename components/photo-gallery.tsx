@@ -6,6 +6,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi
 } from "@/components/ui/carousel"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import Image from "next/image"
@@ -22,12 +23,11 @@ interface Photo {
 export function PhotoGallery() {
   const photos = IMAGES.wedding
   const [selectedPhoto, setSelectedPhoto] = useState<Photo | null>(null)
-  const [api, setApi] = useState<any>(null)
+  const [api, setApi] = useState<CarouselApi | null>(null)
 
   useEffect(() => {
     if (!api) return
 
-    // 自动播放逻辑
     const interval = setInterval(() => {
       api.scrollNext()
     }, 3000)
